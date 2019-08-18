@@ -1,6 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+
+    <context:component-scan base-package="team.cpt.controller"/>
+    <context:annotation-config/>
+    <mvc:annotation-driven/>
+
+    <bean id="xx" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="suffix" value=".jsp"></property>
+        <property name="prefix" value="/jsp/"></property>
+    </bean>
+
+
+    <!--&lt;!&ndash;&lt;!&ndash;异常处理&ndash;&gt;&ndash;&gt;-->
+    <bean id="e" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="exceptionMappings">
+            <props>
+                <prop key="java.lang.RuntimeException">error</prop>
+            </props>
+        </property>
+    </bean>
+    <!--<mvc:interceptors>
+        <mvc:interceptor>
+            &lt;!&ndash;拦截所有请求&ndash;&gt;
+    <mvc:mapping path="/**"></mvc:mapping>
+    <bean class="com.muyu.interceptor.Interception"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+        <mvc:mapping path="/**"></mvc:mapping>
+            &lt;!&ndash;排除&ndash;&gt;
+        <mvc:exclude-mapping path="/login"/>
+        <bean class="com.muyu.interceptor.Interception1"/>
+        </mvc:interceptor>
+        </mvc:interceptors>
+
+
+    &lt;!&ndash;&lt;!&ndash; 配置MultipartResolver，用于上传文件，使用spring的CommonsMultipartResolver &ndash;&gt;&ndash;&gt;
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="5000000"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+    </bean>
+
+    &lt;!&ndash;&lt;!&ndash; 国际化资源文件 &ndash;&gt;&ndash;&gt;
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        &lt;!&ndash; 表示多语言配置文件在根路径下，以message开头的文件&ndash;&gt;
+        <property name="basename" value="message"/>
+    </bean>
+    &lt;!&ndash;配置LocaleChangeInterceptor 主要用于获取请求中的locale信息，将期转为Locale对像，获取LocaleResolver对象&ndash;&gt;
+    <mvc:interceptors>
+        &lt;!&ndash;?lang=zh_CN    message_zh_CN.properties&ndash;&gt;
+        <bean id="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+            <property name="paramName" value="lang"/>
+        </bean>
+    </mvc:interceptors>
+    <bean id="localeResolver"
+          class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+    </bean>-->
+    <!--&lt;!&ndash;静态资源配置&ndash;&gt;-->
+    <!--<mvc:resources mapping="/img/**" location="/img/"></mvc:resources>-->
+
+    <!--<mvc:resources mapping="/html/**" location="/html/"></mvc:resources>-->
+
+    <mvc:resources mapping="/js/**" location="/js/"></mvc:resources>
+    <mvc:resources mapping="/jsp/**" location="/jsp/"></mvc:resources>
 </beans>

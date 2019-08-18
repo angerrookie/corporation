@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="team.cpt.dao.IUserDao">
+    <!--实现接口的方法，id的值必须和接口方法名一致-->
+  <select id="findByName" parameterType="String" resultType="User">
+      select id,username,password from user where username=#{username}
+  </select>
+</mapper>
