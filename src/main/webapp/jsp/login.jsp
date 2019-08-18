@@ -13,13 +13,11 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $("#submit").click(function(){
-                alert("1111");
                 var uname = $("[name=username]").val();
                 var upass = $("[name=password]").val();
                 $.post("login",{username:uname,password:upass},function(data){
                     //alert(data);
                     if(data=="true"){
-                        alert("222")
                         location = "home";
                     }else{
                         $("#mess").html("账户信息有误！");
@@ -38,7 +36,8 @@
         <p>
             PASSWORD:<input type="password" name="password" placeholder="输入密码" required="required">
         </p>
-        <input type="button" id="submit" value="立即登录">
+        <input type="button" id="submit" value="立即登录">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="jsp/register.jsp" style="text-decoration: none" >去注册</a>
     </fieldset>
 </form>
 <div style="color: red" id="mess"></div>
