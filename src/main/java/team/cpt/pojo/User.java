@@ -118,4 +118,23 @@ public class User {
     public void setMajor(String major) {
         this.major = major;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", stuNumber='" + stuNumber + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", sex='" + sex + '\'' +
+                ", state=" + state +
+                ", roleId=" + roleId +
+                ", cptId=" + cptId +
+                ", deptId=" + deptId +
+                ", college='" + college + '\'' +
+                ", major='" + major + '\'' +
+                '}';
+    }
 }

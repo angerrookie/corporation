@@ -6,4 +6,8 @@
   <select id="findByName" parameterType="String" resultType="User">
       select id,username,password from user where username=#{username}
   </select>
+    <!-- 用户注册-->
+    <insert id="register" parameterType="user">
+        insert into user (stunumber,username,password,email) values (#{stuNumber},#{username},#{password},#{email})
+    </insert>
 </mapper>
