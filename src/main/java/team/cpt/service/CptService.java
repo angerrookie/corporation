@@ -42,12 +42,15 @@ public class CptService implements ICptService{
     }
     /**
      * @author: aRookie
-     * @date: 2019/8/19 11:57
+     * @date: 2019/8/19 15:10
      * Description:
-     * 根据类型查询所有社团
+     * 根据类型查社团
      */
-    public List<Cpt> findCptByType(int sortid){
+    @Override
+    public List<Cpt> findByCptType(int sortid) {
+
         List<Cpt> cpt = cptDao.findByCptType(sortid);
         return cpt;
     }
+
 }

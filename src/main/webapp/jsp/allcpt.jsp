@@ -12,10 +12,13 @@
     <title>所有社团</title>
 </head>
 <body>
-<div style="width: 80%;height: 60px;">
-    <c:forEach items="all" var="type">
-        <div style="height: 60px;line-height: 60px;font-size: 12px;float: left;">${type}</div>
+<div style="width: 80%;height: 60px;margin-left: 20%;">
+    <c:forEach items="sorts" var="type">
+        <div style="height: 60px;line-height: 60px;font-size: 12px;float: left;">${type.sorttype}</div>
     </c:forEach>
+</div>
+<div style="width: 80%;margin-left: 20%;">
+    <table style="width: 100%;"></table>
 </div>
 </body>
 </html>

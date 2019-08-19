@@ -8,9 +8,13 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
+import team.cpt.pojo.Cpt;
+import team.cpt.pojo.Sort;
 import team.cpt.pojo.User;
 import team.cpt.service.ICptService;
 import team.cpt.service.IUserService;
+
+import java.util.List;
 
 /**
  * UserController
@@ -40,9 +44,13 @@ public class UserController {
     public String findAllType(ModelMap modelMap){
 
         //查询所有社团类型
+        List<Sort> sorts = cptService.findAllCptType();
+        //查询所有社团
+        List<Cpt> cpts = cptService.findAllCpt();
+        modelMap.put("sorts", sorts);
+        modelMap.put("cpts", cpts);
 
-
-        return "all";
+        return "allcpt";
     }
 
 }
