@@ -24,7 +24,6 @@ import java.util.List;
  * 文件说明:
  */
 @Controller
-@SessionAttributes("loginUser")
 public class UserController {
 
     @Autowired
