@@ -36,11 +36,11 @@
             margin: 0 auto;
         }
         .testBottom{
-            background-color: aquamarine;
+            background-color: antiquewhite;
         }
         .test2Body>nav>ul{
             width: 100%;
-            background-color: dodgerblue;
+            background-color: antiquewhite;
             text-align: center;
             font-size: 14px;
         }
@@ -102,7 +102,7 @@
 </head>
 <body>
 <div id="head" style="width: 100%;height: 80px;background: antiquewhite;">
-    <div id="log" style="background: aqua;width: 20%;height: 80px;float: left;">
+    <div id="log" style="background: antiquewhite;width: 20%;height: 80px;float: left;">
        <div style="width:20%;height: 80px;float: left;"></div>
         <img src="/images/logo.png;" style="width: 120px;height: 80px;float: left;">
     </div>
@@ -134,7 +134,7 @@
             </nav>
         </div>
     </div>
-    <div id="user" style="background: aqua;width: 15%;height: 80px;float: left;">
+    <div id="user" style="background: antiquewhite;width: 15%;height: 80px;float: left;">
         <input id="login" type="button" value="登录" style="width: 50px;height: 30px;">
         <input id="re" type="button" value="注册" style="width: 50px;height: 30px;">
     </div>
