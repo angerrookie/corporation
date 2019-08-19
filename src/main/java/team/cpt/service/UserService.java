@@ -25,9 +25,6 @@ public class UserService implements IUserService{
     @Qualifier("userDao")
     private IUserDao userDao;
 
-    @Autowired
-    @Qualifier("cptDao")
-    private ICptDao cptDao;
     /**
      * @author: aRookie
      * @date: 2019/8/18 16:38
@@ -43,33 +40,5 @@ public class UserService implements IUserService{
             }
         }
         return null;
-    }
-    /**
-     * @author: aRookie
-     * @date: 2019/8/19 11:45
-     * Description:
-     * 查询所有社团类型
-     */
-    public List<Sort> findAllCptType() {
-      List<Sort> sort = cptDao.findAllCptType();
-        return sort;
-    }
-    /**
-     * 查询所有社团
-     */
-    public List<Cpt> findAllCpt(){
-
-        List<Cpt> cpt = cptDao.findAllCpt();
-        return cpt;
-    }
-    /**
-     * @author: aRookie
-     * @date: 2019/8/19 11:57
-     * Description:
-     * 根据类型查询所有社团
-     */
-    public List<Cpt> findCptByType(int sortid){
-        List<Cpt> cpt = cptDao.findByCptType(sortid);
-        return cpt;
     }
 }

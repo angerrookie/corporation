@@ -13,7 +13,7 @@
 </head>
 <body>
 <div style="width: 80%;height: 60px;">
-    <c:forEach items="allcpttype" var="type">
+    <c:forEach items="all" var="type">
         <div style="height: 60px;line-height: 60px;font-size: 12px;float: left;">${type}</div>
     </c:forEach>
 </div>
