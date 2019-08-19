@@ -18,7 +18,20 @@
     </c:forEach>
 </div>
 <div style="width: 80%;margin-left: 20%;">
-    <table style="width: 100%;"></table>
+    <table style="width: 100%;">
+        <tbody style="text-align: center;">
+            <c:forEach items="cpts" var="cpt" varStatus="s">
+               <c:if test="${s.count%4==1}">
+                   <tr style="width: 100%;height: 50px;">
+               </c:if>
+                       <td style="width: 25%;height: 50px;">${cpt.cptname}</td>
+                   <c:if test="${s.count%4==0}">
+                        </tr>
+                   </c:if>
+            </c:forEach>
+        
+        </tbody>
+    </table>
 </div>
 </body>
 </html>
