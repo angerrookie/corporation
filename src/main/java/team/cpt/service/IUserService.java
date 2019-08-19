@@ -1,5 +1,6 @@
 package team.cpt.service;
 
+import team.cpt.pojo.Sort;
 import team.cpt.pojo.User;
 
 /**
@@ -18,4 +19,5 @@ public interface IUserService {
      * 用户登录
      */
     public User login(User user);
+
 }

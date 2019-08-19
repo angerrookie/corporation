@@ -110,25 +110,37 @@
         <div class="test2Body">
             <nav>
                 <ul class="closeFloat">
-                    <li>菜单一
+                    <li>首页</li>
+                    <li>社团协会
                         <ul>
-                            <li><a>子级菜单1</a></li>
-                            <li><a>子级菜单2</a></li>
-                            <li><a>子级菜单3</a></li>
+                            <li><a href="allcpt">所有社团</a></li>
+                            <li><a>搜索社团</a></li>
+                            <li><a>人气社团</a></li>
+                            <li><a>社团风采</a></li>
                         </ul>
                     </li>
-                    <li>菜单二</li>
-                    <li>菜单三
+                    <li>社团活动
                         <ul>
-                            <li><a>子级菜单1</a></li>
-                            <li><a>子级菜单2</a></li>
-                            <li><a>子级菜单3</a></li>
-                            <li><a>子级菜单4</a></li>
-                            <li><a>子级菜单5</a></li>
+                            <li><a>活动通知</a></li>
+                            <li><a>人气活动</a></li>
                         </ul>
                     </li>
-                    <li>菜单四</li>
-                    <li>菜单五</li>
+                    <li>我的社团
+                        <ul>
+                            <li><a>社团信息</a></li>
+                            <li><a>申请进度</a></li>
+                            <li><a>修改信息</a></li>
+                            <li><a>人员管理</a></li>
+                        </ul>
+                    </li>
+                    <li>申请管理
+                        <ul>
+                            <li><a>社团信息</a></li>
+                            <li><a>申请进度</a></li>
+                            <li><a>修改信息</a></li>
+                            <li><a>人员管理</a></li>
+                        </ul>
+                    </li>
                     <li>菜单六</li>
                 </ul>
             </nav>

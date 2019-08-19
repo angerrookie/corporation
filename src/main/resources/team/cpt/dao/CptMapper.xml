@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="team.cpt.dao.ICptDao">
+    <!--实现接口的方法，id的值必须和接口方法名一致-->
+  <select id="findAllCptType"  resultType="Sort">
+      select sortid,sorttype,sortdesc from sort
+  </select>
+    <select id="findAllCpt" resultType="Cpt">
+        select cptid,cptname,sortid,cptdesc,cptdate from cpt
+    </select>
+    <select id="findByCptType" parameterType="int" resultType="Cpt">
+         select cptid,cptname,sortid,cptdesc,cptdate from cpt where sortid=#{sortid}
+    </select>
+</mapper>

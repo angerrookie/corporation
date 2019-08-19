@@ -1,6 +1,7 @@
 package team.cpt.dao;
 
 import org.springframework.stereotype.Repository;
+import team.cpt.pojo.Sort;
 import team.cpt.pojo.User;
 
 /**
@@ -12,7 +13,6 @@ import team.cpt.pojo.User;
  */
 @Repository("userDao")
 public interface IUserDao {
-
     /**
      * @author: aRookie
      * @date: 2019/8/18 16:37
@@ -20,4 +20,5 @@ public interface IUserDao {
      * 根据用户名查询信息
      */
     public User findByName(String username);
+
 }

@@ -37,7 +37,7 @@
             PASSWORD:<input type="password" name="password" placeholder="输入密码" required="required">
         </p>
         <input type="button" id="submit" value="立即登录">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="jsp/register.jsp" style="text-decoration: none" >去注册</a>
+        <a href="register.jsp" style="text-decoration: none" >去注册</a>
     </fieldset>
 </form>
 <div style="color: red" id="mess"></div>
