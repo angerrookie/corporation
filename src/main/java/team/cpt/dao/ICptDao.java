@@ -17,13 +17,6 @@ import java.util.List;
 public interface ICptDao {
     /**
      * @author: aRookie
-     * @date: 2019/8/19 11:43
-     * Description:
-     * 查询所有社团类型
-     */
-    public List<Sort> findAllCptType();
-    /**
-     * @author: aRookie
      * @date: 2019/8/19 11:51
      * Description:
      * 查询所有社团

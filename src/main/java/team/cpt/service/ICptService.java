@@ -13,13 +13,7 @@ import java.util.List;
  * 文件说明:
  */
 public interface ICptService {
-    /**
-     * @author: aRookie
-     * @date: 2019/8/19 11:43
-     * Description:
-     * 查询所有社团类型
-     */
-    public List<Sort> findAllCptType();
+
     /**
      * @author: aRookie
      * @date: 2019/8/19 11:51

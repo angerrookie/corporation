@@ -18,5 +18,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 
 	<mappers>
 		<mapper resource="team/cpt/dao/UserMapper.xml"/>
+		<mapper resource="team/cpt/dao/CptMapper.xml"/>
+		<mapper resource="team/cpt/dao/SortMapper.xml"/>
 	</mappers>
 </configuration>

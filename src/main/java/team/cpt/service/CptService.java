@@ -23,16 +23,6 @@ public class CptService implements ICptService{
     @Qualifier("cptDao")
     private ICptDao cptDao;
     /**
-     * @author: aRookie
-     * @date: 2019/8/19 11:45
-     * Description:
-     * 查询所有社团类型
-     */
-    public List<Sort> findAllCptType() {
-        List<Sort> sort = cptDao.findAllCptType();
-        return sort;
-    }
-    /**
      * 查询所有社团
      */
     public List<Cpt> findAllCpt(){

@@ -113,7 +113,7 @@
                     <li>首页</li>
                     <li>社团协会
                         <ul>
-                            <li><a href="all">所有社团</a></li>
+                            <li><a href="/all">所有社团</a></li>
                             <li><a>搜索社团</a></li>
                             <li><a>人气社团</a></li>
                             <li><a>社团风采</a></li>
