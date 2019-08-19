@@ -11,6 +11,17 @@
     <title>注册页面</title>
 </head>
 <body>
-
+<form>
+    <fieldset>
+        <p>
+            USERNAME:<input type="text" name="stunumber" placeholder="学号" required="required">
+        </p>
+        <p>
+            PASSWORD:<input type="password" name="password" placeholder="输入密码" required="required">
+        </p>
+        <input type="button" id="submit" value="立即登录">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="jsp/login.jsp" style="text-decoration: none" >去注册</a>
+    </fieldset>
+</form>
 </body>
 </html>

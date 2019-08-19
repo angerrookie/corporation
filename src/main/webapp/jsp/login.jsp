@@ -13,12 +13,12 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $("#submit").click(function(){
-                var uname = $("[name=username]").val();
+                var uname = $("[name=stunumber]").val();
                 var upass = $("[name=password]").val();
-                $.post("login",{username:uname,password:upass},function(data){
+                $.post("login",{stunumber:uname,password:upass},function(data){
                     //alert(data);
                     if(data=="true"){
-                        location = "home";
+                        location = "main";
                     }else{
                         $("#mess").html("账户信息有误！");
                     }
@@ -31,7 +31,7 @@
 <form>
     <fieldset>
         <p>
-           USERNAME:<input type="text" name="username" placeholder="手机号|账户" required="required">
+           USERNAME:<input type="text" name="stunumber" placeholder="学号" required="required">
         </p>
         <p>
             PASSWORD:<input type="password" name="password" placeholder="输入密码" required="required">
